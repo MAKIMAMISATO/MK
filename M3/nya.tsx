@@ -1,3 +1,4 @@
+// 1
 const concat = (str1: string, str2: string): string =>{
   return str1 + ' ' + str2
 }
@@ -5,6 +6,7 @@ const concat = (str1: string, str2: string): string =>{
 concat('Hello', 'World')
 console.log(concat('Hello', 'World'))
 
+// 2
 interface INya {
   howIDoIt: string,
   simeArray: (string | number)[],
@@ -17,6 +19,7 @@ const MyHometask: INya = {
   withData: [{ howIDoIt: "I Do It Wel", simeArray: ["string one", 23] }],
 }
 
+// 3
 interface MyArray<T> {
   [key: number]: T;
   reduce<T>(fn: (acc: T, el: T) => T, initial? : T): T;
@@ -25,6 +28,7 @@ interface MyArray<T> {
 const myArray: MyArray<number> = [1,2,3]
 console.log(myArray.reduce((accumulator, value) => accumulator + value, 0))
 
+// 4
 interface IHomeTask {
   data: string
   numbericData: number
